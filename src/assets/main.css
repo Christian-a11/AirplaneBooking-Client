@@ -1,0 +1,104 @@
+/* SkyBook Material 3 & Neumorphic Design Tokens for Bootstrap 5 */
+
+:root {
+  --primary: #005ea3;
+  --primary-container: #0077cc;
+  --secondary: #006687;
+  --secondary-container: #60cdff;
+  --tertiary: #934600;
+  --tertiary-container: #b85a02;
+  --background: #f6fafe;
+  --surface: #f6fafe;
+  --surface-container: #eaeef2;
+  --surface-container-low: #f0f4f8;
+  --surface-container-high: #e4e9ed;
+  --surface-container-highest: #dfe3e7;
+  --surface-container-lowest: #ffffff;
+  --on-background: #171c1f;
+  --on-surface: #171c1f;
+  --on-surface-variant: #404752;
+  --on-primary: #ffffff;
+  --outline: #717783;
+  --outline-variant: #c0c7d3;
+  --error: #ba1a1a;
+  --error-container: #ffdad6;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--on-background);
+  font-family: 'Inter', sans-serif;
+  overscroll-behavior: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Neumorphic Shadow System */
+.neomorph-outset {
+  box-shadow: -6px -6px 12px #ffffff, 6px 6px 12px #d1d9e6;
+}
+
+.neomorph-inset {
+  box-shadow: inset -4px -4px 8px #ffffff, inset 4px 4px 8px #d1d9e6;
+}
+
+.neomorph-btn-primary {
+  box-shadow: -2px -2px 5px #ffffff, 2px 2px 5px #d1d9e6;
+  transition: all 0.2s ease;
+}
+
+.neomorph-btn-primary:active {
+  box-shadow: inset -2px -2px 5px #ffffff, inset 2px 2px 5px #d1d9e6;
+}
+
+/* Material Typography & Fonts */
+.font-display {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.font-headline {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.font-body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Color Utilities */
+.bg-background { background-color: var(--background) !important; }
+.bg-surface { background-color: var(--surface) !important; }
+.bg-surface-container { background-color: var(--surface-container) !important; }
+.bg-surface-container-low { background-color: var(--surface-container-low) !important; }
+.bg-surface-container-high { background-color: var(--surface-container-high) !important; }
+.bg-surface-container-highest { background-color: var(--surface-container-highest) !important; }
+.bg-surface-container-lowest { background-color: var(--surface-container-lowest) !important; }
+.bg-primary { background-color: var(--primary) !important; }
+.bg-primary-container { background-color: var(--primary-container) !important; }
+.bg-secondary { background-color: var(--secondary) !important; }
+.bg-secondary-container { background-color: var(--secondary-container) !important; }
+
+.text-primary { color: var(--primary) !important; }
+.text-secondary { color: var(--secondary) !important; }
+.text-tertiary { color: var(--tertiary) !important; }
+.text-on-background { color: var(--on-background) !important; }
+.text-on-surface { color: var(--on-surface) !important; }
+.text-on-surface-variant { color: var(--on-surface-variant) !important; }
+.text-on-primary { color: var(--on-primary) !important; }
+.text-outline { color: var(--outline) !important; }
+.text-outline-variant { color: var(--outline-variant) !important; }
+.text-error { color: var(--error) !important; }
+
+/* Custom Spacing & Border Helpers */
+.rounded-4 { border-radius: 1rem !important; }
+.rounded-5 { border-radius: 1.5rem !important; }
+.rounded-pill-custom { border-radius: 9999px !important; }
+
+/* Max Width Helpers */
+.max-w-1200 { max-width: 1200px; margin-left: auto; margin-right: auto; }
+.max-w-1400 { max-width: 1400px; margin-left: auto; margin-right: auto; }
